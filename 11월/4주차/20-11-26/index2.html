@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 기본 파일 index.html</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body { font-family: Arial, Helvetica, sans-serif;}
+
+        .header { 
+            background-color: #f1f1f1; 
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .boxa, .boxc {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 300px;
+        }
+        .boxb {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+        .boxa { background-color: #aaaaaa; }
+        .boxb { background-color: #bbbbbb; }
+        .boxc { background-color: #cccccc; }
+
+        .main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 705px) {
+            .boxa { width: 100%; }
+            .boxb { width: 100%; }
+            .boxc { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="header">
+        <p id="headerp"> Header </p>
+    </div>
+
+    <div class="main">
+        <div class="boxa">왼쪽 사이드바</div>
+        <div class="boxb">메인 컨텐츠</div>
+        <div class="boxc">오른쪽 사이드바</div>
+    </div>
+
+    <div class="footer">
+        <p id="footerp"> Footer</p>
+    </div>
+    
+</body>
+</html>
