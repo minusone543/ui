@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ui2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Nanum Gothic", sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            background-color: rgb(34, 190, 183);
+            padding: 20px;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0px;
+        }
+
+        /* display : block 인 태그에 width의 크기를 지정하고 margin 값 중 left, right를 auto로 주면 중앙 정렬됨 */
+        section {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        article {
+            margin: 10px
+        }
+
+        .box-img {
+            float: left;
+            width: 33%;
+        }
+        .box-img img { width: 100%;}
+
+        .box-text {
+            float: left;
+            width: 67%;
+            padding: 10px;
+        }
+
+        article::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제목 부분</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div class="box-img">
+                    <img src="../../../../images/img_5terre.jpg" alt="">
+                </div>
+
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>무엇이 심장은 방황하였으며, 더운지라 그들은 든 황금시대다. 산야에 속에 고동을 싹이 쓸쓸한 아름답고 것은 이것은 뛰노는 이것이다.</p>
+                </div>
+            </article>
+            <article>
+                <div class="box-img">
+                    <img src="../../../../images/img_5terre.jpg" alt="">
+                </div>
+
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>무엇이 심장은 방황하였으며, 더운지라 그들은 든 황금시대다. 산야에 속에 고동을 싹이 쓸쓸한 아름답고 것은 이것은 뛰노는 이것이다.</p>
+                </div>
+            </article>
+            <article>
+                <div class="box-img">
+                    <img src="../../../../images/img_5terre.jpg" alt="">
+                </div>
+
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>무엇이 심장은 방황하였으며, 더운지라 그들은 든 황금시대다. 산야에 속에 고동을 싹이 쓸쓸한 아름답고 것은 이것은 뛰노는 이것이다.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

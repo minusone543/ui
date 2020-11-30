@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topnav 1-1</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+
+    <style>
+        * { 
+            box-sizing: border-box;
+            font-family: 'Stylish', sans-serif;
+         }
+
+         body {
+             margin: 0px;
+         }
+
+          nav {
+             overflow: hidden;
+             background-color: #333333;
+
+         }
+         /*
+         nav a {
+             float: left;
+             display: block;
+             color: #f2f2f2f2;
+             text-align: center;
+             padding: 15px;
+             text-decoration: none;
+         }
+
+         nav a:hover {
+             background-color: #dddddd;
+             padding: 15px;
+             color: black;
+         }*/
+
+         main {
+             background-color: #dddddd;
+             padding: 10px;
+             height: 300px;
+         }
+
+         footer {
+             background-color: #f1f1f1;
+             padding: 10px;
+         } 
+
+         nav li {
+             list-style-type: none;
+             margin: 0px;
+             padding: 1px;
+             overflow: hidden;
+             background-color: #000000;
+         }
+
+         nav li {
+             float: left;
+         }
+
+         nav li a {
+             display: inline-block;
+             color: #f2f2f2;
+             text-align: center;
+             padding: 15px;
+             text-decoration: none;
+         }
+
+         nav li a:hover {
+             background-color: #dddddd;
+             color: black;
+         }
+
+         nav::after {
+            content: "";
+            display: table;
+            clear: both;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li>
+                <a href="#">home</a>
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Main Content</h2>
+        <p>메인 컨텐츠가 들어갈 자리</p>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <title>sidenav</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Stylish', sans-serif;
+        }
+        .contents{
+            margin-left: 200px;
+            padding-left: 20px;
+
+            border: 5px solid black;
+        }
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+            overflow-x: hidden;
+            background-color: #111111;
+        }
+
+        .sidenav ul {
+            margin: 8px 0px;
+            padding: 0px;
+        }
+        .sidenav a {
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            background-color: #dddddd;
+            color: black;
+        }
+
+        .sidenav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">링크1</a></li>
+            <li><a href="#">링크2</a></li>
+            <li><a href="#">링크3</a></li>
+        </ul>
+    </div>
+
+    <div class="contents">
+        <h2>메인 컨텐츠</h2>
+        <p>메인 컨텐츠가 들어갈 자리</p>
+    </div>
+
+
+
+
+</body>
+</html>
