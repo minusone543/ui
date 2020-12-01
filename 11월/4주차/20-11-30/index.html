@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui 1-1</title>
+    <style>
+        * {box-sizing: inherit;}
+        .header1{
+            padding:0.01em 16px
+            
+            }
+
+        div {display: block;}
+
+        .box1 {
+            padding: 0 8px;
+            margin-bottom: 16px;
+            float: left;
+            width: 33.3%;
+            }
+
+        .ul1 {
+            text-align: center;
+            border: 1px solid #ccc;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .black-li {
+            background-color: black;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 24px;
+            display: list-item;
+            color: white;
+            margin: 0px;
+        }
+
+        .li1 {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #ddd;
+            margin: 0px;
+        }
+
+        .green-li {
+            background-color: #4CAF50;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: 24px;
+            display: list-item;
+            color: white;
+            margin: 0px;
+        }
+        
+        .btn1 {
+            color: white;
+            background-color: #4CAF50;
+            padding: 12px 24px;
+            border: none;
+            display: inline-block;
+            margin: 0px;
+        }
+
+        .btn-li {
+            color: black;
+            background-color: #f1f1f1;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            margin: 0;
+        }
+        
+        .mainbox {
+            padding: 0 8px;
+            margin: 0px;
+        }
+        .header1::after, .header1::before,.mainbox::before, .mainbox::after  {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .box1:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header class="header1">
+        
+        <h2>Responsive Pricing Tables</h1>
+        
+    </header>
+
+    <main class="mainbox">
+        <div class="box1">
+            <ul class="ul1">
+                <li class="black-li">
+                    Basic
+                </li>
+                <li class="li1">
+                    <b>10GB</b> Storage
+                </li>
+                <li class="li1">
+                    <b>10</b> Emails
+                </li>
+                <li class="li1">
+                    <b>10</b> Domains
+                </li>
+                <li class="li1">
+                    <b>Endless</b> Support
+                </li>
+                <li class="li1">
+                    <h2>$ 10</h2> per month
+                </li>
+                <li class="btn-li">
+                    <button class="btn1">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <ul class="ul1">
+                <li class="green-li">
+                    Pro
+                </li>
+                <li class="li1">
+                    <b>25GB</b> Storage
+                </li>
+                <li class="li1">
+                    <b>25</b> Emails
+                </li>
+                <li class="li1">
+                    <b>25</b> Domains
+                </li>
+                <li class="li1">
+                    <b>Endless</b> Support
+                </li>
+                <li class="li1">
+                    <h2>$ 25</h2> per month
+                </li>
+                <li class="btn-li">
+                    <button class="btn1">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <ul class="ul1">
+                <li class="black-li">
+                    Premium
+                </li>
+                <li class="li1">
+                    <b>50GB</b> Storage
+                </li>
+                <li class="li1">
+                    <b>50</b> Emails
+                </li>
+                <li class="li1">
+                    <b>50</b> Domains
+                </li>
+                <li class="li1">
+                    <b>Endless</b> Support
+                </li>
+                <li class="li1">
+                    <h2>$ 50</h2> per month
+                </li>
+                <li class="btn-li">
+                    <button class="btn1">Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

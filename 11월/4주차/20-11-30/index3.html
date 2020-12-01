@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui 2-4</title>
+    <style>
+        * {box-sizing: border-box;}
+        header {
+            color: white;
+            background-color: teal;
+            padding: 0.01em 16px;
+        }
+        header > h2 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .laquo {
+            font-size: 36px;
+            float: left;
+        }
+        .raquo {
+            font-size: 36px;
+            float: right;
+        }
+        a {
+            cursor: pointer;
+        }
+
+        .fbox {
+            padding: 0 8px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .rbox1 {
+            padding: 0 8px;
+            width: 66.66%;
+            float: left;
+        }
+        .lbox1 {
+            padding: 0 8px;
+            width: 33.33%;
+            float: left;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .table1 {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .gthtr {
+            color: white;
+            background-color: teal;
+            border-bottom: 1px solid #ccc;
+        }
+      
+        .th1 {
+           
+            padding: 8px 8px;
+            text-align: left;
+        }
+        header::before, .fbox::before {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        header::after, .fbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>sauvignon_blanc</h2>
+        <a href="./index2.html" ><span class="laquo">&laquo;</a>
+        <a href="./index2.html" ><span class="raquo">&raquo;</a>
+    </header>
+    <div class="fbox">
+        <div class="rbox1">
+            <div class="ibox1">
+                <img src="./img_sauvignon_blanc.jpg" style="width: 100%;">
+            </div>
+            <h4>Food</h4>
+            <div class="tbox1">
+                <table class="table1">
+                    <thead>
+                        <tr class="gthtr">
+                            <th class="th1" style="width: 30%;">Food</th>
+                            <th class="th1">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Seafood</th>
+                            <th class="th1" >Shrimps, Crap, Lobster</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Meat</th>
+                            <th class="th1">Chicken, Pork</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Cheese</th>
+                            <th class="th1">Brie, Gruyere</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Other</th>
+                            <th class="th1">Cream sauces</th>
+                        </tr>
+                    </tbody>
+                </table>
+    
+            </div>
+            <div class="tbox2">
+                <h4>Flavours</h4>
+                <table class="table1">
+                    <thead>
+                        <tr class="gthtr">
+                            <th class="th1" style="width: 30%;">Age</th>
+                            <th class="th1">Flavor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Less Ripe</th>
+                            <th class="th1">Green Plum, Green Apple, Pear</th>
+                        </tr>
+                        <tr>
+                            <th class="th1" style="width: 30%;">Medium</th>
+                            <th class="th1">Lemon, Peach, Melon</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">More Ripe</th>
+                            <th class="th1">Pineapple, Fig, Banana, Mango</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Oaked</th>
+                            <th class="th1">added Cream or Butter</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbox3">
+                <h4>Neighbours</h4>
+                <table class="table1">
+                    <thead>
+                        <tr class="gthtr">
+                            <th class="th1" style="width: 30%;">Neighbour</th>
+                            <th class="th1">Flavour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Pinot Gris</th>
+                            <th class="th1">Like under-riped Chardonnay</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Semillion</th>
+                            <th class="th1">Lighter with more lemon</th>
+                        </tr>
+                        <tr class="thtr">
+                            <th class="th1" style="width: 30%;">Viognier</th>
+                            <th class="th1">More Vanilla, Flowers or Perfume</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="lbox1">
+            <h4>Chardonnay</h4>
+            <div class="tbox4">
+                <p>
+                    Chardonnay is the world's most popular wine grape. <br><br>
+    
+                    The taste of the Chardonnay grape is very neutral and easy to like. <br><br>
+    
+                    Many of the Chardonnay flavors are derived from terroir and oak-aging. <br><br>
+    
+                    The flavors varies from noticeable acidity (Cold Climates), to crisply and mineral (Chablis, France) with flavors of green plum, apple and pear, to heavy oak and tropical fruit flavors (the New World). <br><br>
+    
+                    In cooler climates Chardonnay tends to be under-riped. <br><br>
+    
+                    In warmer climates the flavors tend to vary from lemon to peach and melon. <br><br>
+    
+                    In very warm climates Chardonnay tends to be over-riped. <br><br>
+    
+                    Oaked Chardonnay tends to have softer acidity and more fruit flavors with added butter, cream and hazelnut notes. <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

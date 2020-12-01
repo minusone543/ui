@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon을 사용하기 위해서 font awesome 로드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ui2-2</title>
+    <style>
+        * { margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        
+        main {
+            color: skyblue;
+            background-color: #f1f1f1;
+            margin: 16px;
+            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+        }
+        main > h2{ 
+            text-align: center;
+            font-size: 30px;
+        }
+        .box1 {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .icon {
+            width: 50px;
+            float: left;
+        }
+        .textbox {
+            overflow: hidden;
+            
+        }
+        .text {
+            border: 1px solid #ccc;
+            padding: 8px;
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+
+        main > p {
+            text-align: center;
+        }
+        main > p > button {
+            color: #fff;
+            background-color: blue;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border: none;
+            display: inline-block;
+            padding: 8px 16px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Contact Us</h2>
+        <div class="box1">
+            <div class="icon"><i class="fa fa-user" style="font-size: 36px; padding-left: 10px;"></i></div>
+            <div class="textbox"><input class="text" name="First" type="text" placeholder="First Name"></div>
+        </div>
+        <div class="box1">
+            <div class="icon"><i class="fa fa-user" style="font-size: 36px; padding-left: 10px;"></i></div>
+            <div class="textbox"><input class="text" name="Last" type="text" placeholder="Last"></div>
+        </div>
+        <div class="box1">
+            <div class="icon"><i class="fa fa-envelope" style="font-size: 36px; padding-left: 10px;"></i></div>
+            <div class="textbox"><input class="text" name="Email" type="text" placeholder="Email"></div>
+        </div>
+        <div class="box1">
+            <div class="icon"><i class="fa fa-phone-square" style="font-size: 36px; padding-left: 10px;"></i></div>
+            <div class="textbox"><input class="text" name="Phone" type="text" placeholder="Phone"></div>
+        </div>
+        <div class="box1">
+            <div class="icon"><i class="fa fa-pencil-square-o" style="font-size: 36px; padding-left: 10px;"></i></div>
+            <div class="textbox"><input class="text" name="Message" type="text" placeholder="Message"></div>
+        </div>
+        <p>
+            <button>Send</button>
+        </p>
+    </main>
+</body>
+</html>
