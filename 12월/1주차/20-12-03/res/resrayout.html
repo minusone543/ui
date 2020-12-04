@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .res {
+            background-color: teal;
+            height: 50px;
+            
+        }
+
+        @media screen and (max-width: 567px) {
+            .res {background-color: red;}
+        }
+
+        @media screen and (max-width: 768px) {
+            .res {background-color: orange;}
+        }
+
+        @media screen and (max-width: 996px) {
+            .res {background-color: yellow;}
+        }
+
+        @media screen and (max-width: 1200px) {
+            .res {background-color: green;}
+        }   
+    </style>
+</head>
+<body>
+    <div class="res"></div>
+</body>
+</html>

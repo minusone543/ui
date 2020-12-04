@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{box-sizing: border-box;}
+
+    main {
+        background-color: lightgray;
+        
+    }
+    header {
+        padding: 35px 0 35px;
+        margin: 0 15px;
+    }
+    header h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px;
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        background-color: tomato;
+    }
+
+    .id, .pw, .btn {
+        padding: 10px;
+        display: block;
+    }
+
+    .id-box, .pw-box, .btn-box {
+        width: 100%;
+        font-size: 32px;
+        text-align: left;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .btn-box {
+        text-align: center;
+        background-color: lightgreen;
+        border-style: none;
+        color: white;
+    }
+
+    .btn-box:hover {
+        background-color: yellowgreen;
+        color: black;
+    }
+
+    @media screen and (max-width: 1200px) {
+        header h1 {width:100%}
+        .id-box, .pw-box, .btn-box {width: 100%; font-size: 32px;}
+    }
+    @media screen and (max-width: 992px) {
+        header h1 {width:90%}
+        .id-box, .pw-box, .btn-box {width: 100%; font-size: 26px;}
+        .btn-box {background-color: lightsalmon;}
+    }
+    @media screen and (max-width: 768px) {
+        header h1 {width:85%}
+        .id-box, .pw-box, .btn-box {width: 100%; font-size: 20px;}
+        .btn-box {background-color: lightpink;}
+    }
+    @media screen and (max-width: 576px) {
+        header h1 {width:70%}
+        .id-box, .pw-box, .btn-box {width: 100%; font-size: 16px;}
+        .btn-box {background-color: lightskyblue;}
+    }
+
+
+</style>
+
+<body>
+<!-- 
+    문제1. 특정 사이트에 로그인하기 위한 id 및 pw 입력 창을 만들고, 로그인 버튼도 생성하세요
+    ps. 화면의 크기에 따라 id/pw창의 글자 크기가 변경됨
+    화면의 크기는 768px을 기준으로 함
+    폰트의 크기는 32px(화면이 클 경우), 16px(화면이 작을 경우)을 사용
+    각종 CSS 속성은 자유
+ -->
+
+
+
+ <main>
+    <header>
+        <h1> 로그인 화면 만들기</h1>
+    </header>
+     <div>
+         <div class="id"><input class="id-box" type="text" placeholder="id를 입력하세요."></div>
+         <div class="pw"><input class="pw-box" type="password" placeholder="pw를 입력하세요."></div>
+         <div class="btn"><button class="btn-box" type="submit">로그인</button></div>
+     </div>
+ </main>
+
+ <footer></footer>
+
+</body>
+</html>
