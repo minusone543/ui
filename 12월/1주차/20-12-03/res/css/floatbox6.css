@@ -1,0 +1,18 @@
+* {box-sizing: border-box;}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    float: left;
+    width: 25%;
+}
+

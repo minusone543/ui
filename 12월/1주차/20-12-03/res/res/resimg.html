@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지</title>
+
+    <style>
+        #div01 .img-width img {
+            width: 100%;
+            height: auto;
+        }
+
+        #div03 .img-max-width img {
+            /*
+            max-width : 최대 너비를 설정
+            min-width : 최소 너비를 설정
+            max-width 를 설정하고 width에 고정값을 주면 max-width가 동작하지 않음
+            */
+            max-width: 100%;
+            height: auto;
+        }
+
+        #div04 .imgCh {
+            height: 400px;
+            background-image: url("./images/img_corniglia.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 768px) {
+            #div04 .imgCh { background-image: url("./images/img_manarola.jpg"); }
+        }
+
+        @media screen and (max-width: 567px) {
+            #div04 .imgCh { background-image: url("images/img_vernazza.jpg"); }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div01">
+        <h3>width 사용 시</h3>
+        <div class="img-width">
+            <img src="./images/img_vernazza.jpg" alt="">
+        </div>
+    </div>
+
+    <br><hr><br>
+
+    <div id="div02">
+        <h3>기본</h3>
+        <div class="img-max-width">
+            <img src="./images/img_vernazza.jpg" alt="">
+        </div>
+    </div>
+
+    <br><hr><br>
+    <div id="div03">
+        <h3>max-width 사용 시</h3>
+        <div class="img-max-width">
+            <img src="./images/img_vernazza.jpg" alt="">
+        </div>
+    </div>
+
+    <br><hr><br>
+
+    <div id="div04">
+        <h3>화면 크기에 따른 이미지 변경</h3>
+        
+        <div class="imgCh">
+            <h4>미디어 쿼리를 사용하여 이미지 변경</h4>
+        </div>
+        <br>
+        <div>
+            <h4>picture 태그를 사용하여 이미지 변경</h4>
+            <picture>
+                <!-- max-width가 작은값을 먼저 입력 -->
+                <!-- source 태그의 media 속성은 미디어쿼리의 옵션 사용 -->
+                <source srcset="./images/img_vernazza.jpg" media="(max-width:567px)">
+                <source srcset="./images/img_manarola.jpg" media="(max-width:768px)">
+                <source srcset="./images/img_corniglia.jpg">
+                <img src="./images/img_corniglia.jpg" alt="">
+            </picture>
+        </div>
+
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

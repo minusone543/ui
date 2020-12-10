@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>측면에서 출력되는 메뉴</title>
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background-color: #111111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: gray;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: white;
+        }
+
+        .sidebar .btn-close {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 26px;
+            margin-left: 50px;
+
+        }
+
+        .btn-open {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111111;
+            color: white;
+            padding: 16px;
+            border: none;
+        }
+        .btn-open:hover {
+            background-color: #444444;
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btnOpen").on("click",function(){
+                $("#mySidebar").css("width", "250px");
+                $("#main").css("marginLeft", "250px");
+            });
+
+            $("#btnClose").on("click",function(){
+                $("#mySidebar").css("width", "0px");
+                $("#main").css("marginLeft", "0px");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a class="btn-close" id="btnClose"><i class="fa fa-close"></i></a>
+        <a href="#">링크 1</a>
+        <a href="#">링크 2</a>
+        <a href="#">링크 3</a>
+        <a href="#">링크 4</a>
+    </div>
+
+    <div id="main">
+        <button class="btn-open" id="btnOpen">Open Sidebar</button>
+    </div>
+    
+</body>
+</html>

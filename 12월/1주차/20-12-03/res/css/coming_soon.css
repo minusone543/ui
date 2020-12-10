@@ -1,0 +1,41 @@
+* {box-sizing: border-box;}
+
+.logo {
+    font-size: 24px;
+    padding: 12px 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+img {
+    background-image: url(../forestbridge.jpg);
+    min-height: 100%;
+}
+.textbox{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+hr {
+    width: 40%;
+}
+
+.day35 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.footer{
+    padding: 12px 24px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.comingsoon{
+    font-size: 64px;
+    font-weight: 700;
+}
